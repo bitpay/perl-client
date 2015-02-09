@@ -4,11 +4,11 @@ use strict;
 use warnings;
 
 use Test::More;
-use Business::Bitpay;
+use Business::BitPay;
 use JSON 'decode_json';
 
 my $api_key = 'someapikey';
-my $bitpay  = new_ok 'Business::Bitpay', [$api_key];
+my $bitpay  = new_ok 'Business::BitPay', [$api_key];
 my $data    = {price => 15, currency => 'USD'};
 
 subtest 'POST request' => sub {

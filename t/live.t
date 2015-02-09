@@ -3,14 +3,14 @@
 use strict;
 use warnings;
 
-use Business::Bitpay;
+use Business::BitPay;
 use Test::More;
 
 plan skip_all => 'set BITPAY env variable to API key'
   unless $ENV{BITPAY};
 my $api_key = $ENV{BITPAY};
 
-my $bitpay = new_ok 'Business::Bitpay', [$api_key];
+my $bitpay = new_ok 'Business::BitPay', [$api_key];
 
 my $invoice;
 subtest 'create invoice' => sub {
