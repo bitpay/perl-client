@@ -1,4 +1,4 @@
-package Business::Bitpay;
+package Business::BitPay;
 
 use strict;
 use warnings;
@@ -89,12 +89,12 @@ __END__
 
 =head1 NAME
 
-Business::Bitpay - Bitpay API
+Business::BitPay - BitPay API
 
 =head1 SYNOPSIS
 
-    use Business::Bitpay;
-    my $bitpay = Business::Bitpay->new($api_key);
+    use Business::BitPay;
+    my $bitpay = Business::BitPay->new($api_key);
 
     # create new invoice
     $invoice = $bitpay->create_invoice(price => 10, currency => 'USD');
@@ -104,14 +104,14 @@ Business::Bitpay - Bitpay API
 
 =head1 DESCRIPTION
     
-Bitpay API documentation contents full description of API methods
+BitPay API documentation contents full description of API methods
 L<https://bitpay.com/downloads/bitpayApi.pdf>.
 
 =head2 C<new>
 
-    my $bitpay = Business::Bitpay->new($api_key);
+    my $bitpay = Business::BitPay->new($api_key);
 
-Construct Business::Bitpay object.
+Construct Business::BitPay object.
 
 =head2 C<create_invoice>
 
@@ -119,10 +119,10 @@ Construct Business::Bitpay object.
 
 Creates new invoice. This method will croak in case of error. Full list of
 fields and their description can be found in C<Creating an Invoice> section of
-Bitpay API documentation.
+BitPay API documentation.
 
 Returns hashref representing of the invoice object. Description can be found in
-C<BitPay Server Response> section of the Bitpay API documentation.
+C<BitPay Server Response> section of the BitPay API documentation.
 
 =head2 C<get_invoice>
 
