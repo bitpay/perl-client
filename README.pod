@@ -16,7 +16,7 @@ Business::Bitpay - Bitpay API
 =head1 DESCRIPTION
     
 Bitpay API documentation contents full description of API methods
-L<https://bitpay.com/help-api>.
+L<https://bitpay.com/downloads/bitpayApi.pdf>.
 
 =head2 C<new>
 
@@ -49,6 +49,10 @@ L<https://bitpay.com/downloads/bitpayApi.pdf>
 =head1 AUTHOR
 
 Sergey Zasenko, C<undef@cpan.org>.
+
+=head1 CREDITS
+
+Rich Morgan (ionux)
 
 =head1 COPYRIGHT AND LICENSE
 

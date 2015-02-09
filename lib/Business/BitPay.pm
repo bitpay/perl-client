@@ -42,7 +42,7 @@ sub prepare_request {
     my $request = HTTP::Request->new(
         $method => $uri, [
             'User-Agent'   => 'bitpay api',
-            'X-BitPay-Plugin-Info' => 'perl0.05',
+            'X-BitPay-Plugin-Info' => 'perl' . $VERSION,
             @fields,
         ],
         $data
@@ -138,6 +138,10 @@ L<https://bitpay.com/downloads/bitpayApi.pdf>
 =head1 AUTHOR
 
 Sergey Zasenko, C<undef@cpan.org>.
+
+=head1 CREDITS
+
+Rich Morgan (ionux)
 
 =head1 COPYRIGHT AND LICENSE
 

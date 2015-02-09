@@ -1,8 +1,8 @@
 Revision history for perl module Business::Bitpay
 
-0.05 2014-03-31
+0.05 2014-04-10
 
-    - Added new HTTP header for version tracking
+    - Added new HTTP header for version tracking (ionux)
 
 0.04 2014-01-09
     

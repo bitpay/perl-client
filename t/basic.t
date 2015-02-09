@@ -16,6 +16,8 @@ subtest 'POST request' => sub {
     is $request->method, 'POST', 'method';
     is $request->uri, "https://$api_key:\@bitpay.com/api/invoice", 'uri';
     is $request->header('content-type'), 'application/json', 'content type';
+    is $request->header('X-BitPay-Plugin-Info'),
+      'perl' . $Business::Bitpay::VERSION, 'plugin info header';
     is_deeply decode_json($request->content), $data, 'data';
 };
 
