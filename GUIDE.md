@@ -1,5 +1,10 @@
 # Overview
+## Prerequisites
+You must have a BitPay merchant account to use this library.  It's free to [sign-up for a BitPay merchant account](https://bitpay.com/start).
 
+Once you have a BitPay merchant account, you will need [a working BitPay Access Token](/api/getting-access.html) – this can be done either [via the library](#pairing) or manually in [the BitPay Dashboard](https://bitpay.com/tokens).
+
+## Quick Start
 ```perl
 use Business::BitPay;
 my $bitpay = Business::BitPay->new($api_key);
