@@ -1,6 +1,6 @@
 use inc::Module::Install;
 
-all_from 'lib/Business/Bitpay.pm';
+all_from 'lib/Business/BitPay.pm';
 
 requires 'Carp';
 requires 'HTTP::Request';
